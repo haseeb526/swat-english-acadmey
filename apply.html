@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Apply Online - Swat English Academy</title>
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Form Container */
+    .form-container {
+      background: white;
+      padding: 40px 50px;
+      border-radius: 12px;
+      max-width: 480px;
+      width: 100%;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+      transition: box-shadow 0.3s ease;
+      margin: 60px auto 80px;
+      font-family: 'Montserrat', sans-serif;
+      color: #333;
+    }
+    .form-container:hover {
+      box-shadow: 0 12px 36px rgba(0,0,0,0.18);
+    }
+
+    h2 {
+      margin-bottom: 30px;
+      font-weight: 600;
+      font-size: 28px;
+      color: #004080;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #555;
+      margin-top: 20px;
+      font-size: 14px;
+      letter-spacing: 0.03em;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 14px 16px;
+      border-radius: 8px;
+      border: 1.8px solid #ddd;
+      font-size: 15px;
+      color: #333;
+      transition: border-color 0.3s ease;
+      font-family: 'Montserrat', sans-serif;
+      resize: vertical;
+    }
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: #4a90e2;
+      box-shadow: 0 0 8px rgba(74,144,226,0.3);
+    }
+
+    button {
+      margin-top: 30px;
+      width: 100%;
+      background-color: #4a90e2;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 16px;
+      font-size: 18px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      letter-spacing: 0.05em;
+      font-family: 'Montserrat', sans-serif;
+    }
+    button:hover {
+      background-color: #357ABD;
+    }
+
+    /* Responsive */
+    @media (max-width: 520px) {
+      .form-container {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Contact Bar -->
+  <div class="contact-bar">
+    <span><i class="fas fa-user-friends"></i> <strong>Address:</strong> Airport Road Nawakaly Mingoara Swat</span>
+    <span><i class="fas fa-phone-alt"></i> <strong>PH:</strong> (0946) 814440</span>
+    <span><i class="fas fa-mobile-alt"></i> <strong>MOB:</strong> +92-300-0000000</span>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <img src="images/image.png" alt="School Logo" style="height: 180px;" />
+    <div class="branding">
+      <h1>Swat English Academy</h1>
+      <p>School & College</p>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+
+        <li class="dropdown1">
+          <a href="about.html">About us <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-menu1">
+            <li><a href="what-makes-us-different.html">What Makes Us Different</a></li>
+            <li><a href="mission.html">Our Mission</a></li>
+            <li><a href="vision.html">Our Vision</a></li>
+            <li><a href="leadership.html">Leadership</a></li>
+            <li><a href="ourobjectives.html">Our Objectives</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown2">
+          <a href="#">Admissions <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-menu2">
+            <li><a href="results.html">Results</a></li>
+            <li><a href="admission-details.html">Admission Details</a></li>
+            <li><a href="apply-online.html">Apply Online</a></li>
+            <li><a href="fee-rules.html">Fee Rules</a></li>
+          </ul>
+        </li>
+
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="director.html">Director's Message</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="branches.html"><i class="fa-solid fa-school-flag"></i> Branches</a></li>
+
+        <li class="dropdown3">
+          <a href="student-affairs.html">Student Affairs <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-menu3">
+            <li><a href="uniform.html">Uniform Guidelines</a></li>
+            <li><a href="attendance.html">Attendance Policy</a></li>
+            <li><a href="ptm.html">Parent-Teacher Meetings (PTM)</a></li>
+            <li><a href="rules.html">General & Disciplinary Rules</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Apply Form Section -->
+  <main>
+    <form class="form-container" action="#" method="post" onsubmit="alert('Thank you for applying! We will contact you soon.'); return false;">
+      <h2>Apply Online</h2>
+
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Your full name" required />
+
+      <label for="grade">Grade Applying For</label>
+      <select id="grade" name="grade" required>
+        <option value="" disabled selected>-- Select Grade --</option>
+        <option>K.G</option>
+        <option>1st Grade</option>
+        <option>2nd Grade</option>
+        <option>3rd Grade</option>
+        <option>4th Grade</option>
+        <option>5th Grade</option>
+        <option>6th Grade</option>
+        <option>7th Grade</option>
+        <option>8th Grade</option>
+        <option>9th Grade</option>
+        <option>10th Grade</option>
+        <option>11th Grade</option>
+        <option>12th Grade</option>
+      </select>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="example@mail.com" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="+92 300 1234567" required />
+
+      <label for="message">Additional Information</label>
+      <textarea id="message" name="message" rows="4" placeholder="Anything you'd like us to know (optional)"></textarea>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
+      <div style="flex: 1; min-width: 250px; margin-right: 20px;">
+        <h3>Contact Us</h3>
+        <p>Swat English Academy School & College</p>
+        <p>Airport Road Nawakaly Mingoara Swat</p>
+        <p>Email: info@swatschool.com</p>
+        <p>Phone: +92-300-0000000</p>
+      </div>
+      <div style="flex: 1; min-width: 300px;">
+        <h3>Find Us</h3>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=..." 
+          width="100%" 
+          height="200" 
+          style="border:0; border-radius: 8px;" 
+          allowfullscreen 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 20px; border-top: 1px solid #ffffff44; padding-top: 10px;">
+      <p>&copy; 2025 Swat English Academy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script>
+    const backToTop = document.getElementById("backToTop");
+    window.onscroll = function () {
+      backToTop.style.display = window.scrollY > 300 ? "block" : "none";
+    };
+    backToTop.onclick = function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
